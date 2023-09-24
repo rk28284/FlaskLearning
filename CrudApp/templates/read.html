@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Entries</title>
+</head>
+<body>
+    <h1>Read Entries</h1>
+    <table>
+        <tr>
+            <th>Key</th>
+            <th>Value</th>
+        </tr>
+        {% for key, value in data.items() %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/create">Create New Entry</a>
+    <a href="/update">Update Entry</a>
+    <a href="/delete">Delete Entry</a>
+</body>
+</html>
